@@ -132,6 +132,8 @@ class Post
 
     //clean the data
     $this->id = htmlspecialchars(strip_tags($this->id));
+
+    //binding the id parameter
     $stmt->bindParam(':id', $this->id);
 
     //execute the query
